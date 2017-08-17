@@ -1,0 +1,19 @@
+{
+
+  "description": "Hide chat preview while using Whatsapp Web.",
+  "manifest_version": 2,
+  "name": "whatshide",
+  "version": "1.0",
+  "homepage_url": "https://github.com/inessadl/whatshide",
+  "icons": {
+    "48": "icons/whatshide-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://web.whatsapp.com/*"],
+      "js": ["whatshide.js"]
+    }
+  ]
+
+}
